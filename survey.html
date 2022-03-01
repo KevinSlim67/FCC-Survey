@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<link href="style.css" rel="stylesheet" type="text/css" >
+
+
+<html>
+      <body>
+        <div class="container default-margin align-center" id="intro-color" style="width: 50%">
+          <h1 id="title" class="align-self">Technologies of the Future</h1>
+          <p id="description" class="align-self">Technology keeps evolving at an exponential rate, we have made this survey to collect your thoughts on what do you think the future holds.</p>
+        </div>
+
+            <form id="survey-form">
+
+              <!-- Name -->
+
+              <div class="field">
+                <label for="name" id="name-label"> Name </label>
+                <div class="flex-box">
+                  <input type="text" name= "name" id="name" class="form-content" placeholder="Enter your name" required>
+                </div>
+              </div>
+
+              <!-- Age and Nationality -->
+              <div class="field">
+                <label for="number" id="number-label"> Age (Optional) </label>
+                <div class="flex-box">
+                  <input type="number" name="number" id="number" class="form-content" placeholder="Enter your age"
+                   min="10" max="100">
+                </div>
+              </div>
+              <div class="field">
+                <label for="nationality" id="nationality-label"> Nationality (Optional)</label>
+                <div class="flex-box">
+                  <input type="text" name="nationality" id="nationality" class="form-content" placeholder="Enter your nationality">
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="field">
+                <label for="email" id="email-label"> Email </label>
+                <div class="flex-box">
+                  <input type="email" name="email" id="email" class="form-content" placeholder="Enter your email" required>
+                </div>
+              </div>
+
+              <hr color="black">
+
+              <!-- Favorite Device -->
+              <div class="field">
+                <p> What is the electronic device that you use the most throughout the day </p>
+                <div class="flex-box">
+                  <select name="favorite-device" id="dropdown" class="form-content" required>
+                    <option disabled selected value>Select a device</option>
+                    <option value="smartphone">Smartphone</option>
+                    <option value="computer">Computer or Laptop</option>
+                    <option value="console">Console</option>
+                    <option value="smartwatch">Smartwatch</option>
+                    <option value="e-book">E-book</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+            
+              <!-- Anticipated Technology -->
+              <div class="field">
+                <p> What is the technology that you are looking forward the most</p>
+                <div class="flex-box" style="flex-direction: column">
+                  <label for="androids">
+                    <input id="androids" type="radio" name="future-tech" value="androids"> Androids
+                  </label>
+                  <label for="space-tourism">
+                    <input id="space-tourism" type="radio" name="future-tech" value="space-tourism"> Space Tourism
+                  </label>
+                  <label for="vr-universes">
+                    <input id="vr-universes" type="radio" name="future-tech" value="vr-universes"> Virtual Reality Universes
+                  </label>
+                  <label for="brain-implemented-devices">
+                    <input id="brain-implemented-devices" type="radio" name="future-tech" value="brain-implemented-devices"> Brain-implemented Devices
+                  </label>
+                  <label for="future-tech-other">
+                    <input id="future-tech-other" type="radio" name="future-tech" value="other"> Other
+                  </label>    
+                </div>
+              </div>
+
+              <!-- Technology Branches -->
+              <div class="field">
+                <p> What field(s)'s technology do you think need to be improved in priority ?</p>
+                <div class="flex-box" style="flex-direction: column">
+                  <label for="medical">
+                    <input id="medical" type="checkbox" name="tech-branches" value="medical"> Medical
+                  </label>
+                  <label for="architecture">
+                    <input id="architecture" type="checkbox" name="tech-branches" value="architecture"> Architecture
+                  </label>
+                  <label for="business">
+                    <input id="business" type="checkbox" name="tech-branches" value="business"> Business
+                  </label>
+                  <label for="education">
+                    <input id="education" type="checkbox" name="tech-branches" value="education"> Education
+                  </label>
+                  <label for="other-field">
+                    <input id="other-field" type="checkbox" name="tech-branches" value="other"> Other
+                  </label>    
+                </div>
+              </div>
+
+              <!-- Textarea -->
+              <div class="field">
+                <p> Please write your thoughts on what you think the future might hold</p>
+                <div class="flex-box">
+                  <textarea id="thoughts" name="thoughts" placeholder="Enter your thoughts here..." required>
+                  </textarea>
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="flex-box" id="submit-box">
+                <button type="submit" name="submit" id="submit"> Submit </button>
+              </div>
+
+            </form>
+        </div>
+      </body>
+</html>

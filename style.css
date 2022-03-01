@@ -1,0 +1,189 @@
+html {
+    --font-color: #5f2519;
+    --input-color: #c9e8ee;
+    --default-font: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--default-font);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(font-color);
+    margin: 5%;
+  }
+  
+/* mobile friendly alternative to using background-attachment: fixed */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient(
+        225deg,
+        #ffffff,
+        #d7edf1,
+        #C5DEE3
+    );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#transparent {
+    background-color: #00000000;
+}
+
+.align-center {
+    align-self: center;
+    height: auto;
+}
+
+.default-margin {
+    margin: 2%;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#intro-color {
+    background-color: #a3cad200;
+}
+
+#title {
+    color: var(--font-color);
+    text-align: center;
+}
+
+#description {
+    color: var(--font-color);
+    text-align: center;
+}
+
+hr {
+    visibility:visible;
+    width: 98%;
+    color: #79a3ac8f;
+
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+    color: var(--font-color);
+    background-color: #a3cad277;
+    opacity: 100%;
+    align-self: center;
+    width: 70%;
+    height: auto;
+
+    padding: 1% 2% 1% 2%;
+    border-radius: 2%;
+    opacity: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3%;
+    justify-content: space-between;
+}
+
+.field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: var(--font-color);
+    background-color: #a3cad200;
+    width: 100%;
+    height: auto;
+    align-self: center;
+    border-radius: 2%;
+    align-items: flex-start;
+    margin : 2.5%;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 1%;
+}
+
+.form-content {
+    flex: 1;
+    background-color: var(--input-color);
+    border-style: none;
+    border-radius: 5px;
+    min-height: 35px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input:focus[type="text"],
+input:focus[type="number"],
+input:focus[type="email"] {
+    outline: solid;
+    outline-color: rgba(0, 0, 0, 0.281);
+    outline-width: 2px;
+}
+
+input[type="radio"] {
+    transform: scale(1);
+    margin-right: 1.5%;
+}
+
+input[type="checkbox"] {
+    transform: scale(1);
+    margin-right: 1.5%;
+}
+
+#thoughts {
+    color: rgb(46, 44, 44);
+    width: 50%;
+    height: 10rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border-style: none;
+}
+
+#thoughts:focus {
+    outline: solid;
+    outline-color: rgba(0, 0, 0, 0.281);
+    outline-width: 2px;
+}
+
+#submit-box {
+    height: 2.5rem; 
+    width: 90%; 
+    justify-content: flex-end;        
+    align-self: center; 
+    margin-top: 2rem; 
+    margin-bottom: 1rem 
+}
+
+button[type="submit"] {
+    color: var(--font-color);
+    font-family: var(--default-font);
+    background-color: #cee9ec;
+    font-size: 1rem;
+    width: 9rem;
+    height: 100%;
+    border-radius: 10px;
+    font-weight: bold;
+}
